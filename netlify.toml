@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/linhas.html"
+status = 200
