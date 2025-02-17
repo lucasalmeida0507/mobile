@@ -1,0 +1,131 @@
+.p-4 {
+    padding: 1rem;
+    text-align: end;
+}
+
+h1.text-2xl.font-bold {
+    align-items: flex-start;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    /* Organiza os botões verticalmente */
+    align-items: center;
+    /* Centraliza os botões horizontalmente */
+    gap: 20px;
+    /* Espaçamento entre os botões */
+    margin: 50px;
+    padding: 50px;
+    background-color: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #0d490f;
+}
+
+button-1 {
+    background-color: aquamarine;
+}
+
+a:hover {
+    background-color: aliceblue;
+}
+
+button-station {
+    border: 10px solid #FF5733;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    /* Espaço entre os botões */
+    width: 300px;
+    /* Largura fixada dos botões */
+}
+
+/* Alinhar os botões verticalmente */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Estilo do modal (invisível inicialmente) */
+.modal {
+    display: none;
+    /* Oculta o modal por padrão */
+    position: fixed;
+    /* Fixa o modal na tela */
+    z-index: 1;
+    /* Fica sobre outros conteúdos */
+    left: auto;
+    top: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Cor de fundo semi-transparente */
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content {
+    background-color: #fff;
+    margin: 50% auto;
+    padding: 50px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: -80px;
+}
+
+/* Estilo do botão de fechar */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.seta {
+    text-decoration: none;
+    color:  #ffffff;
+    background-color: none;
+}
+
+.seta:hover {
+    background-color: rgba(0, 0, 0, 0.164);
+    color: #4CAF50;
+
+}
+
+
+
+

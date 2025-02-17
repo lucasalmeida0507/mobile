@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linhas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuButton = document.getElementById("menu-button");
+            const menu = document.getElementById("menu");
+            
+            menuButton.addEventListener("click", function() {
+                menu.classList.toggle("hidden");
+            });
+        });
+    </script>
+    <style>
+        body { background: radial-gradient(circle, #2a204e, #000000);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .weather-container {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f3f3f3;
+            display: inline-block;
+        }
+        #weather-icon {
+            width: 50px;
+        }
+    </style>
+</head>
+<header class="bg-blue-600 text-white py-4 px-6 flex justify-between items-center" style="background-color:black;">
+    <h1 class="text-2xl font-bold">Telefones Úteis</h1>
+    <button id="menu-button" class="md:hidden text-white text-2xl" style="background-color: black;">☰</button>
+    <nav id="menu" class="hidden md:block">
+        <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 bg-blue-600 md:bg-transparent p-4 md:p-0" style="background-color: black;">
+          <li><a href="linhas.html" class="hover:underline">Página Inicial</a></li>
+            <li><a href="https://mobilidade.grupoccr.com.br/viamobilidade8e9/noticias/2025/janeiro/linhas-8-diamante-e-9-esmeralda-tem-manutencoes-programadas-a-pa/" target="_blank" class="hover:underline">Manutenção Programada</a></li>
+            <li><a href="img/map.pdf" target="_blank" class="hover:underline">Mapa do Metrô</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<table class="table" style="background-color: #ffffff63; color: #000000;">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">CCO</th>
+      <th scope="col">Telefone</th>
+      <th scope="col">Ramal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td><strong>CPS Linha 08</strong></td>
+      <td><a href="tel:+551139274885">(11)3927-4885</a><i class="fa-solid fa-phone-volume"></i></td>
+      <td>8004</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td><strong>CPS Linha 09</strong></td>
+      <td><a href="tel:+551139274886">(11)3927-4886</a><i class="fa-solid fa-phone-volume"></i></td>
+      <td>9004</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td><strong>CPS Whatsapp</strong></td>
+      <td>91037-5205</td>
+      <td><strong>Não atende ligação</strong></td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td><strong>CCT Linha 08</strong></td>
+      <td><a href="tel:+551139274880">(11)3927-4880</a><i class="fa-solid fa-phone-volume"></i></td>
+      <td>8001</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td><strong>CCT linha 09</strong></td>
+      <td><a href="tel:+551139274884">(11)3927-4884</a><i class="fa-solid fa-phone-volume"></i></td>
+      <td>9001</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td><strong>CGM linha 08</strong></td>
+      <td><a href="tel:+551139274887">(11)3927-4887</a><i class="fa-solid fa-phone-volume"></i></td>
+      <td>8005</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td><strong>CGM linha 09</strong></td>
+      <td><a href="tel:+551139274889">(11)3927-4889</a><i class="fa-solid fa-phone-volume"></i></td>
+      <td>9005</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td><strong>Arrecadação</strong></td>
+      <td><a href="tel:+5511943675418">(11)94361-5418</a><i class="fa-solid fa-phone-volume"></i></td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+<div style="display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px; justify-content: space-evenly; font-size: 50px; background-color: rgba(0, 0, 0, 0.733);">
+        <a class="seta" href="linhas.html"><i class="fa-solid fa-house"></i></a>
+    </div>
+</body>
+</html>

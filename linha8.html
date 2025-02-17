@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamante</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuButton = document.getElementById("menu-button");
+            const menu = document.getElementById("menu");
+            
+            menuButton.addEventListener("click", function() {
+                menu.classList.toggle("hidden");
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .weather-container {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f3f3f3;
+            display: inline-block;
+        }
+        #weather-icon {
+            width: 50px;
+        }
+    </style>
+</head>
+<header class="bg-blue-600 text-white py-4 px-6 flex justify-between items-center" style="background-color:black;">
+    <h1 class="text-2xl font-bold">Linha 08 Diamante</h1>
+    <button id="menu-button" class="md:hidden text-white text-2xl" style="background-color: black;">☰</button>
+    <nav id="menu" class="hidden md:block">
+        <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 bg-blue-600 md:bg-transparent p-4 md:p-0" style="background-color: black;">
+            <li><a href="linhas.html" class="hover:underline">Página Inicial</a></li>
+            <li><a href="tel.html" class="hover:underline">Telefones Úteis</a></li>
+            <li><a href="https://mobilidade.grupoccr.com.br/viamobilidade8e9/noticias/2025/janeiro/linhas-8-diamante-e-9-esmeralda-tem-manutencoes-programadas-a-pa/" target="_blank" class="hover:underline">Manutenção Programada</a></li>
+            <li><a href="img/map.pdf" target="_blank" class="hover:underline">Mapa do Metrô</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body style="background: radial-gradient(circle, #000000, #383737);">
+<div class="button-container">
+    <a href="jpr.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>JPR</strong></a>
+    <a href="bfu.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>BFU</strong></a>
+    <a href="lab.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>LAB</strong></a>
+    <a href="dmo.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>DMO<p><i class="fa-solid fa-truck-medical"></i></p></strong></a>
+    <a href="ile.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>ILE</strong></a>
+    <a href="pal.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>PAL</strong></a>
+    <a href="osa.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>OSA</strong></a>
+    <a href="csa.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>CSA</strong></a>
+    <a href="qtu.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>QTU<p><i class="fa-solid fa-truck-medical"></i></p><p><i class="fa-solid fa-motorcycle"></i></p></strong></a>
+    <a href="gmc.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>GMC</strong></a>
+    <a href="cpb.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>CPB</strong></a>
+    <a href="ste.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>STE</strong></a>
+    <a href="ajo.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>AJO</strong></a>
+    <a href="bru.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>BRU</strong></a>
+    <a href="jbe.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>JBE</strong></a>
+    <a href="jsi.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>JSI</strong></a>
+    <a href="jdi.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>JDI<p><i class="fa-solid fa-truck-medical"></i></p></strong></a>
+    <a href="sco.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>SCO</strong></a>
+    <a href="ecd.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>ECD</strong></a>
+    <a href="ipv.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>IPV</strong></a>
+    <a href="srt.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>SRT</strong></a>
+    <a href="amb.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>AMB</strong></a>
+    <a href="abu.html" style="background-color: #4CAF50;width: 100px; color: #f3f3f3; padding: 10px; border: 10px; border-radius: 5px;"><strong>ABU</strong></a>
+</div>
+<div style="display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px; justify-content: space-evenly; font-size: 50px; background-color: rgb(0, 0, 0);">
+        <a class="seta" href="linha9.html"><strong>Linha 09</strong></a>
+        <p style="color: #00000000;">.</p>
+        <a class="seta" href="linhas.html"><i class="fa-solid fa-house"></i></a>
+    </div>
+</body>
+</html>

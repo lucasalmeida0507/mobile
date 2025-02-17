@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Esmeralda</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuButton = document.getElementById("menu-button");
+            const menu = document.getElementById("menu");
+
+            menuButton.addEventListener("click", function () {
+                menu.classList.toggle("hidden");
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        .weather-container {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f3f3f3;
+            display: inline-block;
+        }
+
+        #weather-icon {
+            width: 50px;
+        }
+    </style>
+</head>
+<header class="bg-blue-600 text-white py-4 px-6 flex justify-between items-center" style="background-color:black;">
+    <h1 class="text-2xl font-bold">Pinheiros</h1>
+    <button id="menu-button" class="md:hidden text-white text-2xl" style="background-color: black;">☰</button>
+    <nav id="menu" class="hidden md:block">
+        <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 bg-blue-600 md:bg-transparent p-4 md:p-0"
+            style="background-color: black;">
+            <li><a href="linhas.html" class="hover:underline">Página Inicial</a></li>
+            <li><a href="tel.html" class="hover:underline">Telefones Úteis</a></li>
+            <li><a href="https://mobilidade.grupoccr.com.br/viamobilidade8e9/noticias/2025/janeiro/linhas-8-diamante-e-9-esmeralda-tem-manutencoes-programadas-a-pa/"
+                    target="_blank" class="hover:underline">Manutenção Programada</a></li>
+            <li><a href="img/map.pdf" target="_blank" class="hover:underline">Mapa do Metrô</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body style="background: radial-gradient(circle, #000000, #2c5f58);">
+    <div class="button-container">
+        <div class="btn-container">
+            <button class="btn-modal" id="btn1">Como Chegar <p><i class="fa-solid fa-location-arrow"></i></p></button>
+            <button class="btn-modal" id="btn2">Mapa da Região<p>
+            </p><i class="fa-solid fa-map-location-dot"></i></p></button>
+            <button class="btn-modal" id="btn3">Acessibilidade <p><i class="fa-solid fa-eye-slash"></i></p></button>
+            <button class="btn-modal" id="btn4">Pontos de Referência <p><i class="fa-regular fa-map"></i></p></button>
+            <button class="btn-modal" id="btn5">Telefones <p><i class="fa-solid fa-phone"></i></p></button>
+            <button class="btn-modal" id="btn6">Encaminhamento <p><i class="fa-solid fa-truck-medical"></i></p>
+            </button>
+        </div>
+
+        <!-- Modais -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="modal1">&times;</span>
+                <h2><strong>Como chegar</strong></h2>
+                <p style="color: #f3f3f300;">.</p>
+                <p style="color: #f3f3f300;">.</p>
+                <a href="https://waze.com/ul?q=estação?pinheiros" target="_blank">
+                    <p>Abrir no Waze <i class="fa-solid fa-location-arrow"></i></p>
+                </a>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="modal2">&times;</span>
+                <h2><strong>Mapa da Região</strong></h2>
+                <p style="color: #f3f3f300;">.</p>
+                <p style="color: #f3f3f300;">.</p>
+                <a href="https://www.google.com/maps/search/esta%C3%A7%C3%A3o+pinheiros/@-23.56735,-46.7045749,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank">
+                    <p>Abra o Mapa da Região <i class="fa-solid fa-map-location-dot"></i></p>
+                </a>
+            </div>
+        </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="modal3">&times;</span>
+                <h2><strong>Acessibilidade <i class="fa-solid fa-eye-slash"></i></strong></h2>
+                <p style="color: #f3f3f300;">.</p>
+                <p><strong>Sanitário Público:</strong> Sim</p>
+                <p><strong>Piso tátil:</strong> Sim</p>
+                <p><strong>Telefone adaptado para PCR:</strong> Sim</p>
+                <p><strong>Rampa:</strong> Sim</p>
+                <p><strong>Elevadores:</strong> Não</p>
+                <p><strong>Escadas rolantes:</strong> Sim</p>
+                <p><strong>Escadas fixas:</strong> Sim</p>
+            </div>
+        </div>
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="modal4">&times;</span>
+                <h2><strong>Pontos de Referência</strong></h2>
+                <p style="color: #f3f3f300;">.</p>
+                <p>- Terminal de Ônibus <i class="fa-solid fa-map-pin"></i></p>
+                <p>- Transferência para a linha 04 <i class="fa-solid fa-train"></i></p>
+            </div>
+        </div>
+
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="modal5">&times;</span>
+                <h2><strong>Telefones <i class="fa-solid fa-phone"></i></strong></h2>
+                <p style="color: #f3f3f300;">.</p>
+                <h3><strong>RAMAIS</strong></h3>
+                <p><strong>SSO:</strong> 90600 / 90601 / 90602</p>
+                <p><strong>Manutenção:</strong> 90603</p>
+                <p><strong>Supervisão:</strong> 90604</p>
+                <a href="tel:+551139274928"><strong>Estação:</strong> (11)3927-4928 <i class="fa-solid fa-phone-volume"></i></a>
+                <a href="tel:+5511912781173"><strong>Aferição:</strong> (11)91278-1173 <i class="fa-solid fa-phone-volume"></i></a>
+            </div>
+        </div>
+
+        <div id="modal6" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="modal6">&times;</span>
+                <p><strong>Hospital Universitário USP</strong></p>
+                  Av. Prof. Lineu Prestes, 2565 - Butantã
+                </p>
+                <p><strong>Pronto Socorro Municipal da Lapa</strong></p>
+                  Av. Queiroz Filho, 313 - Vila Hamburguesa
+                </p>
+                <p><strong>PS Bandeirantes</strong></p>
+                  R. Augusto Farina, 1125 - Butanta
+                </p>
+                <p><strong>14º DP Pinheiros</strong></p>
+                  R. Dep. Lacerda Franco, 372 - Pinheiros
+                </p>
+                <p><strong>15º DP Itaim Bibi</strong></p>
+                  R. Dr. Renato Paes de Barros, 340 - Itaim Bibi
+                </p>
+                <p><strong>3ª Delegacia De Defesa Da Mulher - Oeste</strong></p>
+                  Av. Corifeu de Azevedo Marques, 4.300 - 2° andar - Vila Lageado
+                </p>
+                <p><strong>Delegacia De Polícia Do Metropolitano - DELPOM</strong></p>
+                  Av. Auro Soares de Moura Andrade, 15076 - Barra Funda
+                </p>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px; justify-content: space-evenly; font-size: 50px; background-color: rgb(0, 0, 0);">
+        <a class="seta" href="usp.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <a class="seta" href="linha9.html"><i class="fa-solid fa-house"></i></a>
+        <a class="seta" href="hbr.html"><i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <script>
+        function abrirWaze() {
+            window.location.href = "https://waze.com/ul?q=estação?pinheiros";
+        }
+    </script>
+    <script>
+        // Obter todos os botões
+        var buttons = document.querySelectorAll(".btn-modal");
+
+        // Obter todos os modais
+        var modals = document.querySelectorAll(".modal");
+
+        // Obter os botões de fechar
+        var closes = document.querySelectorAll(".close");
+
+        // Abrir o modal ao clicar no botão
+        buttons.forEach(function (btn, index) {
+            btn.onclick = function () {
+                modals[index].style.display = "block";
+            }
+        });
+
+        // Fechar o modal ao clicar no botão de fechar
+        closes.forEach(function (close) {
+            close.onclick = function () {
+                var modalId = close.getAttribute("data-modal");
+                document.getElementById(modalId).style.display = "none";
+            }
+        });
+
+        // Fechar o modal ao clicar fora dele
+        window.onclick = function (event) {
+            modals.forEach(function (modal) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
